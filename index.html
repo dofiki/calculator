@@ -3,9 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
     <title>calculator</title>
 </head>
 <body>
-    
+    <div class="left"></div>
+    <div class="calculator">
+    <div class="screen"></div>
+    <div class="result"></div>
+    <div class="numpad">
+        <div class="one" onclick="displayDigit(1)">1</div>
+        <div class="two" onclick="displayDigit(2)" >2</div>
+        <div class="three" onclick="displayDigit(3)">3</div>
+        <div class="four" onclick="displayDigit(4)">4</div>
+        <div class="five" onclick="displayDigit(5)">5</div>
+        <div class="six" onclick="displayDigit(6)">6</div>
+        <div class="seven" onclick="displayDigit(7)">7</div>
+        <div class="eight" onclick="displayDigit(8)">8</div>
+        <div class="nine" onclick="displayDigit(9)">9</div>
+        <div class="zero" onclick="displayDigit(0)">0</div>
+        <div class="add" onclick="displayDigit('+')">+</div>
+        <div class="sub" onclick="displayDigit('-')">-</div>
+        <div class="mul" onclick="displayDigit('*')">*</div>
+        <div class="div" onclick="displayDigit('/')">/</div>
+        <div class="equalsto" onclick="displayResult(currentInput)">=</div>
+        <div class="mistake">
+            <div class="clear" onclick="displayDigit('clear')">AC</div>
+            <div class="back" onclick="displayDigit('back')">DEL</div>
+  </div>
+
+    </div>
+</div>
+    <div class="right"></div>
 </body>
+<script src="main.js"></script>
 </html>

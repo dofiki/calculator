@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    background-color: #607274;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    width: 100vw;
+    height: 100vh;
+}
+
+.calculator{
+    display: grid;
+    grid-template-rows: 0.5fr 0.5fr 2fr;
+    width: 20rem;
+    height: 30rem;
+    outline: 1px solid rgb(255, 255, 255);
+    background-color: #607274 ;
+    justify-self: center;
+    align-self: center;
+}
+
+.numpad{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #607274   ;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+
+}
+
+.one, .two, .three, .four, .five, .six, .seven, .eight, .nine, 
+.zero, .add, .sub, .mul, .div, .equalsto{
+   
+    height: 5rem;
+    width: 5rem;
+    background-color: #ffffff;
+
+    outline: 1px solid rgb(0, 0, 0);
+    cursor: pointer;
+
+    /*to center text*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.one:hover, .two:hover, .three:hover, .four:hover, .five:hover, .six:hover,
+ .seven:hover, .eight:hover, .nine:hover, .zero:hover, .add:hover, .sub:hover, .mul:hover, .div:hover, 
+ .equalsto:hover{
+   
+background-color: #ded6c6; 
+transition: ease-in 0.2s;
+}
+
+
+.screen{
+    background-color: #607274;
+    outline: 1px solid rgb(255, 255, 255);
+    font-size: 1.2rem;
+    padding: 1rem;
+    width: 18rem;
+    color: white;
+    font-weight: bold;
+
+   
+}
+
+.result{
+    background-color: #607274;
+    outline: solid 1px white;
+    padding: 1rem;
+    font-size: 1.2rem;
+    width: 18rem;
+    color: white;
+    font-weight: bold;
+}
+
+.mistake{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    outline: 1px solid black;
+    height: 5rem;
+    width: 5rem;
+    background-color: #ffffff;
+    outline: 1px solid rgb(0, 0, 0);
+    cursor: pointer;
+
+}
+
+.clear{
+    background-color: white;
+    outline: 1px solid black;
+    height: 5rem;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clear:hover{
+    background-color: #ded6c6; 
+    transition: ease-in 0.2s;
+}
+
+.back{
+    background-color: white;
+    outline: 1px solid black;
+    height: 5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.back:hover{
+    background-color: #ded6c6; 
+    transition: ease-in 0.2s;
+}
